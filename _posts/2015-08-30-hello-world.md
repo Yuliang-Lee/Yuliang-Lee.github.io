@@ -6,6 +6,7 @@ tags: [life]
 comments: true
 ---
 
-用 **樱桃（Cherry）MX-BOARD 2.0 C 黑色黑轴机械键盘** 写下第一篇blog~
+Hello github pages~~~~
+把原来在csdn的blog搬到这里来了~~
 
 <a class="btn btn-default" href="https://github.com/Yuliang-Lee">my github address</a>
