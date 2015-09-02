@@ -3,7 +3,6 @@ layout: post
 title: Hello World!
 categories: [life]
 tags: [life]
-fullview: true
 comments: true
 ---
 
