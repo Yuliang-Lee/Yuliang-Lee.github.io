@@ -160,25 +160,67 @@ test(["dereplication", "distinct", "distinct2"]);
 
 当代码的complex为1000，也就是数组中大多数元素都不重复的情况下运行三次：
 
-| dereplication | distinct  | distinct2 |
-|:--------------|:----------|:----------|
-| 8381ms        | 12943ms   | 1045ms    |
-| 8490ms        | 13504ms   | 1057ms    |
-| 8157ms        | 13183ms   | 1044ms    |
-{: rules="groups"}
+<table class="table">
+   <thead>
+      <tr>
+         <th>dereplication</th>
+         <th>distinct</th>
+         <th>distinct2</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>8381ms</td>
+         <td>8490ms</td>
+         <td>8157ms</td>
+      </tr>
+      <tr>
+         <td>12943ms</td>
+         <td>13504ms</td>
+         <td>13183ms</td>
+      </tr>
+      <tr>
+         <td>1045ms</td>
+         <td>1057ms</td>
+         <td>1044ms</td>
+      </tr>
+   </tbody>
+</table>
 
 **当重复数很少时。用对象做判断的写法有压倒性的性能优势。**
 ---------
 但是当complex设为100，也就是数组中大部分都是重复元素时：
 
-| dereplication | distinct | distinct2 |
-|:------------|:----------|:----------|
-| 302ms         | 450ms      | 961ms    |
-| 327ms         | 437ms      | 980ms    |
-| 321ms         | 454ms      | 958ms    |
-{: rules="groups"}
+<table class="table">
+   <thead>
+      <tr>
+         <th>dereplication</th>
+         <th>distinct</th>
+         <th>distinct2</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>302ms</td>
+         <td>327ms</td>
+         <td>321ms</td>
+      </tr>
+      <tr>
+         <td>450ms</td>
+         <td>437ms</td>
+         <td>454ms</td>
+      </tr>
+      <tr>
+         <td>961ms</td>
+         <td>980ms</td>
+         <td>958ms</td>
+      </tr>
+   </tbody>
+</table>
 
 **当数组中存在大量重复元素时，单循环方式比较慢**
+
+可以根据业务场景分析选择哪种实现方式。
 
 这只是比较简单的测试，没有覆盖所有情况，仅代表个人观点。
 
