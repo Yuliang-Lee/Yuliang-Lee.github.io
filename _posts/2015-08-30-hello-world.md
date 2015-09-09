@@ -26,4 +26,15 @@ Hello github pages~~~~
 4. 添加了分享文章的小插件[JiaThis](http://www.jiathis.com/)。（Ps:当时加这个进去的时候死活在页面看不到效果，尝试了半天发现是因为我访问网页时候使用了https协议，远程加载JS的时候出错了。。。(╯‵□′)╯︵┻━┻，改为http协议访问blog即可）。
 5. 暂时就这么多。
 
+2015/9/9更新：
+#### 使用自己购买的域名和github pages绑定
+以我自己在[godaddy](https://www.godaddy.com/ "godaddy")购买的为栗（购买流程自行百度，不在这里详说拉）：
+
+1. 进入domain的配置页面（manage DNS），页面大概如下：
+    ![manage DNS]({{ site.BASE_PATH }}/images/postImg/2015-08-30/pic1.png)
+    找到CNAME那个配置项，编辑www那一行，然后把POINTS TO修改为你的github page地址（例：username.github.io)，保存即可；
+
+2. 在你的项目根目录下创建CNAME文件（重说三），里面写入你购买的域名，如：www.xlaoyu.info（xlaoyu.info)也行，保存然后merge到你项目中。
+3. 等几分钟然后你就可以拿着你的域名去装X了！
+
 <a class="btn btn-default" href="https://github.com/Yuliang-Lee">my github address</a>

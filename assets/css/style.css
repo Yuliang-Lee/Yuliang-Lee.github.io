@@ -1,7 +1,41 @@
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
+/* @import url(http://fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext); */
+html {
+    font-size: 16px;
+}
 
 body{
 	color: #2c3e50;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("http://at.alicdn.com/t/font_1395307880_4954178.eot");
+  /* IE9*/
+  src: url("http://at.alicdn.com/t/font_1395307880_4954178.eot?#iefix") format("embedded-opentype"), url("http://at.alicdn.com/t/font_1395307880_9161122.woff") format("woff"), url("http://at.alicdn.com/t/font_1395307880_4053228.ttf") format("truetype"), url("http://at.alicdn.com/t/font_1395307880_9707928.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+
+.iconfont {
+  font-family: 'iconfont'; }
+
+  /* 块/段落引用 */
+blockquote {
+  position:relative;
+  color: #999;
+  font-weight:300;
+  font-family:Avenir, 'Helvetica Neue', 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif;
+  border-left:1px solid #1abc9c;
+  padding-left:1em;
+  margin:1em 3em 1em 2em;
+}
+/* 代码片断 */
+pre, code{
+  font-family:Courier, 'Courier New', monospace;
+  white-space:pre-wrap;
+  word-wrap:break-word;
+}
+/* 要注意表单元素并不继承父级 font 的问题 */
+body, button, input, select, textarea{
+  font: 400 1em/1.8 Avenir, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
 }
 
 .sidebar {
@@ -113,14 +147,16 @@ article.home div a, article.home pre a { color: #2c3e50; }
 article.home div a:hover, article.home pre a:hover { color: #2c3e50; text-decoration: none; }
 article img { max-width: 100%; }
 
-h1,h2,h3,h4,h5,h6 { font-family: 'Ubuntu', sans-serif; }
+h1,h2,h3,h4,h5,h6 {
+    font-family:'Helvetica Neue', 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif;
+}
 article.home h1,
 article.home h2,
 article.home h3,
 article.home h4,
 article.home h5,
 article.home h6 {
-	font-family: 'Ubuntu', sans-serif;
+	font-family:'Helvetica Neue', 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif;
 	color: #f2756a;
 }
 
@@ -144,7 +180,7 @@ article.home h4 a:hover {
 
 footer {
 	padding-top: 15px;
-	font-family: 'Ubuntu';
+	font-family:'Helvetica Neue', 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif;
 }
 
 /* nav-vertical-tabs component */
