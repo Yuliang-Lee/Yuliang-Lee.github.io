@@ -223,3 +223,19 @@ ul.dropdown-menu>li>a>i.fa {
     width: 1.3em;
 }
 
+.sidebar .tags {
+    line-height: 1.5;
+    margin: 40px 40px;
+}
+
+.sidebar .tags a {
+    color: #aaaaaa;
+    display: inline;
+    text-decoration: none;
+}
+
+.sidebar .tags a:focus,
+.sidebar .tags a:hover {
+    color: white;
+    text-decoration: underline;
+}

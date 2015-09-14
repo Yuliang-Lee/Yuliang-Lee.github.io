@@ -6,6 +6,9 @@
 	{% if page.description %}
 	<meta name="description" content="{{ page.description }}">
 	{% endif %}
+	{% if page.keywords %}
+	<meta name="keywords" content="{{ page.keywords }}">
+	{% endif %}
 	<meta name="author" content="{{ site.author.name }}">
 
 	<!-- Enable responsive viewport -->
@@ -22,14 +25,22 @@
 	<link href="{{ site.BASE_PATH }}/assets/resources/syntax/syntax.css" rel="stylesheet">
 	<link href="{{ site.BASE_PATH }}/assets/css/style.css" rel="stylesheet">
 
+	<!-- shortcut and touch icons -->
+
 	<link rel="shortcut icon" href="{{ site.BASE_PATH }}/images/favicon.ico">
-	<!-- Le fav and touch icons -->
-	<!-- Update these with your own images
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-	-->
+	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+	<link rel="apple-touch-icon-precomposed" href="{{ site.BASE_PATH }}/images/apple-touch-icon-57×57.png">
+	<!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≤ 6: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.BASE_PATH }}/images/apple-touch-icon-72×72.png">
+	<!-- For iPhone with @2× display running iOS ≤ 6: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.BASE_PATH }}/images/apple-touch-icon-114×114.png">
+	<!-- For iPad with @2× display running iOS ≤ 6: -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.BASE_PATH }}/images/apple-touch-icon-144×144.png">
+	<!-- For iPad with @2× display running iOS ≥ 7: -->
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.BASE_PATH }}/images/apple-touch-icon-152×152.png">
+	<!-- For iPhone 6 Plus with @3× display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="{{ site.BASE_PATH }}/images/apple-touch-icon-180×180.png">
+
 
 	<!-- <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.BASE_PATH }}/feed.xml"> -->
 	<script>
@@ -37,7 +48,7 @@
 		(function() {
 		  var hm = document.createElement("script");
 		  hm.src = "//hm.baidu.com/hm.js?99e44034d751a046013d2029e099d1a2";
-		  var s = document.getElementsByTagName("script")[0]; 
+		  var s = document.getElementsByTagName("script")[0];
 		  s.parentNode.insertBefore(hm, s);
 		})();
 	</script>

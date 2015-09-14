@@ -2,8 +2,8 @@
 layout: post
 title: css的一些规范
 categories: [css]
-tags: [css, css规范]
-comments: true
+tags: [css, css书写规范]
+description: css书写规范，css书写技巧，css书写顺序
 ---
 
 关于css的书写规范的一些学习记录。

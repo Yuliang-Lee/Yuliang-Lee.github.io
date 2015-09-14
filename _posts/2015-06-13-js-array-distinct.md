@@ -3,7 +3,7 @@ layout: post
 title: js数组去重实现
 categories: [js]
 tags: [js, Array]
-comments: true
+
 ---
 
 js简单数组去重实现的几种方案。

@@ -62,4 +62,17 @@
 		{% endif %}
 	</ul>
 </div>
+<!-- <div class='category'>
+	<ul>
+		{% for cat in site.categories %}
+			<li><a href="{{ site.BASE_PATH }}/category.html#{{ cat[0] }}">{{ cat[0] }}<span>{{ cat[1].size }}</span></a></li>
+		{% endfor %}
+	</ul>
+</div> -->
+
+<div class='tags'>
+	{% for tag in site.tags %}
+		<a href="{{ site.BASE_PATH }}/tag.html#{{ tag[0] }}" style='font-size:{{ tag[1].size | times: 2 | plus: 15  }}px;'>{{ tag[0] }}</a>
+	{% endfor %}
+</div>
 <!-- sidebar.html end -->
