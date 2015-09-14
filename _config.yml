@@ -21,7 +21,7 @@ defaults:
       path: "" # empty string for all files
     values:
       title: xlaoYu's bloggggggggg
-      commons: true
+      comments: true
 
 description: Stylish Jekyll Theme
 author:
