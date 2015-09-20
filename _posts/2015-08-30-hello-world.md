@@ -34,7 +34,9 @@ Hello github pages~~~~
     ![manage DNS]({{ site.BASE_PATH }}/images/postImg/2015-08-30/pic1.png)
     找到CNAME那个配置项，编辑www那一行，然后把POINTS TO修改为你的github page地址（例：username.github.io)，保存即可；
 
-2. 在你的项目根目录下创建CNAME文件（重说三），里面写入你购买的域名，如：www.xlaoyu.info（xlaoyu.info)也行，保存然后merge到你项目中。
-3. 等几分钟然后你就可以拿着你的域名去装X了！
+2. 修改ANAME记录里 @ 的那条记录，points to 修改为192.30.252.153或192.30.252.154（如果你是主要访客是亚洲的，也可以是103.245.222.133），保存√。
+
+3. 在你的项目根目录下创建CNAME文件（重说三），里面写入你购买的域名，如：www.xlaoyu.info，保存然后merge到你项目中。
+4. 等几分钟然后你就可以拿着你的域名去装X了！
 
 <a class="btn btn-default" href="https://github.com/Yuliang-Lee">my github address</a>
