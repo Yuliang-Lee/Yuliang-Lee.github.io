@@ -33,7 +33,21 @@ shortinfo: HTML的meta标签简单介绍,包括Open Graph protocol(开放内容�
   2. description：``<meta name="description：" content="">``网页的主要内容
   3. keywords：``<meta name="keywords：" content="">``网页的关键字
   4. robots：``<meta name="robots：" content="">``告诉搜索引擎爬虫如何处理网页
-  5. viewport: ``<meta name="viewport" content="">``用于告诉移动端浏览器如何处理网页，一般的值有*width=device-width, initial-scale=1.0*
+  **以下是移动端使用的**
+  1. viewport: ``<meta name="viewport" content="">``用于告诉移动端浏览器如何处理网页，一般的值有
+    width：宽度（数值 / device-width）（范围从200 到10,000，默认为980 像素）
+    height：高度（数值 / device-height）（范围从223 到10,000）
+    initial-scale：初始的缩放比例 （范围从>0 到10）
+    minimum-scale：允许用户缩放到的最小比例
+    maximum-scale：允许用户缩放到的最大比例
+    user-scalable：用户是否可以手动缩 (no,yes)
+  2. mobile-web-app-capable 把网页添加到桌面,模仿app离线应用,content=yes/no
+  3. apple-mobile-web-app-capable: ``<meta name="apple-mobile-web-app-capable" content="yes" />``同上,但是是IOS的safari专用
+  4. apple-mobile-web-app-status-bar-style: 在上面开启的前提下有用,content值是``default|black|black-translucent``
+  5. apple-mobile-web-app-title 在capable开启的前提下有用,content=自己想显示的标题
+  6. ``<meta content="telephone=no" name="format-detection" />`` 忽略将数字自动识别为电话号码
+  7. ``<meta content="email=no" name="format-detection" />`` 忽略识别邮箱,这两个元素可以合在一起写
+
 
 ## Open Graph protocol
 
@@ -92,3 +106,5 @@ Meta Property=og代码的功能并不等同于网页的meta name标签，两者�
 2. [http://www.w3schools.com/tags/tag_meta.asp](http://www.w3schools.com/tags/tag_meta.asp)需要“翻山越岭”，更详细的介绍
 3. [https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta) MDN对meta标签的介绍（完整，标准）
 4. [http://ogp.me/](http://ogp.me/) Open Graph Protocol官网
+5. [http://segmentfault.com/a/1190000002407912](http://segmentfault.com/a/1190000002407912) 常用meta整理
+6. [http://fex.baidu.com/blog/2014/10/html-head-tags/?qq-pf-to=pcqq.c2c](http://fex.baidu.com/blog/2014/10/html-head-tags/?qq-pf-to=pcqq.c2c) HTML head 头标签
