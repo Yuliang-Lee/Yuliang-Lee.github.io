@@ -38,6 +38,10 @@ body, button, input, select, textarea{
   font: 400 1.6em/1.8 Avenir, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
 }
 
+a {
+  text-decoration: underline;
+}
+
 .sidebar {
 	position: fixed;
 	top: 0px;
