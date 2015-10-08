@@ -2,7 +2,7 @@
 layout: post
 title: Dojo widgets的生命周期-删除阶段
 categories: [dojo]
-tag: [js,dojo,widget lifecycle,widget]
+tag: [javascript,dojo,dojo widget]
 description: Dojo widgets的生命周期删除阶段的介绍,结合源码作简单的说明
 keywords: dojo,dojo widget,widget lifecycle,dijit
 shortinfo: Dojo widgets的生命周期删除阶段的介绍,结合源码作简单的说明
@@ -51,6 +51,22 @@ getChildren: function(){
 ```
 
 把*destroyDescendants*里面用到的*getChildren*也拿出来了，``registry.findWidgets``是**找到传进去的节点的所有直接子widget(不包括孙widget)**，但是找到的直接子widget会调用*destroyRecursive*，这就相当于是遍历调用销毁。**注意:这里没有销毁当前widget的并且不属于containerNode子孙widget的子孙widget**((╯‵□′)╯︵┻━┻有点拗口)，因为这是在*destroy*方法里面做的事情。
+比如:
+
+```html
+<div><!-- 这个是domNode -->
+  <button data-dojo-type="dijit/form/Button">btn1</button>
+  <button data-dojo-type="dijit/form/Button">btn2</button>
+  <div data-dojo-attach-point="containerNode">
+    <button data-dojo-type="dijit/form/Button">btn3</button>
+    <button data-dojo-type="dijit/form/Button">btn4</button>
+  </div>
+</div>
+```
+
+这个时候调用*destroyDescendants*会把btn3和btn4销毁掉。
+下面看destroy和destroyRendering两个方法。
+
 
 ```javascript
 destroy: function(/*Boolean*/ preserveDom){

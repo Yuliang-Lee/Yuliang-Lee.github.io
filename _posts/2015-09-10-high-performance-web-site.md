@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 高性能网站建设学习笔记（1）
-categories: [js]
-tag: [js, web性能优化, frontend-engineering]
+categories: [web]
+tag: [javascript, web性能优化, 前端工程化]
 description: web性能优化，前端工程化
 keywords: web性能,高性能网站建设指南,web优化笔记
 ---

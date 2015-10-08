@@ -1,8 +1,8 @@
 ---
 layout: post
 title: js数组去重实现
-categories: [js]
-tags: [js, Array]
+categories: [javascript]
+tags: [javascript, Array, 数组去重]
 ---
 
 js简单数组去重实现的几种方案。
