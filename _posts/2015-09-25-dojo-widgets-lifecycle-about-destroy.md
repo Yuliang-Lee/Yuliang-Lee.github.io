@@ -36,7 +36,7 @@ destroyRecursive: function(/*Boolean?*/ preserveDom){
 用一个属性_beingDestroyed表示已经开始销毁,preserveDom表示是否需要保留wdiget的依附节点(比如我们把widget**替换**到一个文档的一个已经存在的*div*上,在删除的时候是否保留并还原这个节点).
 destroyDescendants：
 
-```javascript
+{% highlight javascript %}
 destroyDescendants: function(/*Boolean?*/ preserveDom){
     // 通过递归遍历所有孙节点销毁
     array.forEach(this.getChildren(), function(widget){
@@ -48,12 +48,12 @@ destroyDescendants: function(/*Boolean?*/ preserveDom){
 getChildren: function(){
     return this.containerNode ? registry.findWidgets(this.containerNode) : [];
 }
-```
+{% endhighlight %}
 
 把*destroyDescendants*里面用到的*getChildren*也拿出来了，``registry.findWidgets``是**找到传进去的节点的所有直接子widget(不包括孙widget)**，但是找到的直接子widget会调用*destroyRecursive*，这就相当于是遍历调用销毁。**注意:这里没有销毁当前widget的并且不属于containerNode子孙widget的子孙widget**((╯‵□′)╯︵┻━┻有点拗口)，因为这是在*destroy*方法里面做的事情。
 比如:
 
-```html
+{% highlight html %}
 <div><!-- 这个是domNode -->
   <button data-dojo-type="dijit/form/Button">btn1</button>
   <button data-dojo-type="dijit/form/Button">btn2</button>
@@ -62,13 +62,13 @@ getChildren: function(){
     <button data-dojo-type="dijit/form/Button">btn4</button>
   </div>
 </div>
-```
+{% endhighlight %}
 
 这个时候调用*destroyDescendants*会把btn3和btn4销毁掉。
 下面看destroy和destroyRendering两个方法。
 
 
-```javascript
+{% highlight javascript %}
 destroy: function(/*Boolean*/ preserveDom){
     // destroy any resources (including widgets) registered via this.own().
     //销毁所有注册到this.own上的资源,通常我们把事件句柄注册上去,
@@ -117,16 +117,17 @@ destroyRendering: function(/*Boolean?*/ preserveDom){
         delete this.srcNodeRef;
       }
     }
-```
+{% endhighlight %}
+
 *destroyRendering*这个方法主要是销毁domNode和删除对domNode的引用，如果我们要在销毁阶段添加我们自己的逻辑，**强烈推荐**重载*destroy*方法，一般这样写：
 
-```javascript
+{% highlight javascript %}
 destroy: function() {
   this.inherited(arguments);//先让父类的方法执行了
 
   //开始自己的逻辑
 }
-```
+{% endhighlight %}
 
 到此，销毁阶段完成了。
 

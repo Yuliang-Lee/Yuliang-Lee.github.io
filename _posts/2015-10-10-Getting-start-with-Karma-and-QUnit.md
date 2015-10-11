@@ -76,7 +76,7 @@ Press tab to list possible options.
 
 经过这个初始化过程，会在根目录生成一个`karma.conf.js`文件:
 
-```
+{% highlight javascript %}
 // Karma configuration
 // Generated on Sat Oct 10 2015 14:23:08 GMT+0800 (中国标准时间)
 
@@ -136,7 +136,7 @@ module.exports = function(config) {
     singleRun: true
   })
 }
-```
+{% endhighlight %}
 
 **注意，如果singleRun和autoWatch都设为false，则在karma start之后不会运行测试，不知道是本来就如此还是我没配置对，请高手指教**
 Browsers设置了Chrome或者Phantomjs或者其他的，都要安装相应的插件`npm install karma-*-launcher`，*号替换成Chrome等，可选插件看[这里](http://karma-runner.github.io/0.12/config/browsers.html)。
@@ -152,16 +152,16 @@ Browsers设置了Chrome或者Phantomjs或者其他的，都要安装相应的插
 
 在src文件夹下创建test.js，内容如下：
 
-```
+{% highlight javascript %}
 // 一个字符串翻转函数
 function stringReverse(str) {
     return typeof str === "string" && str.split("").reverse().join("");
 }
-```
+{% endhighlight %}
 
 在test文件夹下创建string.json，内容如下：
 
-```
+{% highlight javascript %}
 (function() {
 
     QUnit.module('string-test');
@@ -170,22 +170,22 @@ function stringReverse(str) {
         assert.equal(stringReverse("abc"), "cba", "test success");
     });
 }());
-```
+{% endhighlight %}
 修改配置文件:
 
-```
+{% highlight javascript %}
 files: [
   'src/test.js',
   'test/string.js'
 ]
-```
+{% endhighlight %}
 
 在命令行输入`karma start`，可以看到输出：
 ![test输出]({{ site.BASE_PATH }}/images/postImg/2015-10-10/testoutput.png)
 在Chrome和PhantomJS下都方法都返回正确。
 如果把string.js改成:
 
-```
+{% highlight javascript %}
 (function() {
 
     QUnit.module('string-test');
@@ -194,7 +194,7 @@ files: [
         assert.equal(stringReverse("ccc"), "cba", "abc reverse to cba");
     });
 }());
-```
+{% endhighlight %}
 
 则函数返回值和我们预期的不一样，会提示错误：
 ![test输出]({{ site.BASE_PATH }}/images/postImg/2015-10-10/testoutputfail.png)
