@@ -24,14 +24,14 @@ shortinfo: Dojo widgets的生命周期删除阶段的介绍,结合源码作简�
 （载自官网）
 看一下destroyRecursive源码
 
-```javascript
+{% highlight javascript %}
 destroyRecursive: function(/*Boolean?*/ preserveDom){
 
     this._beingDestroyed = true;
     this.destroyDescendants(preserveDom);//销毁所有子孙节点(包含在containerNode里面的节点)
     this.destroy(preserveDom);//销毁本身
 }
-```
+{% endhighlight %}
 
 用一个属性_beingDestroyed表示已经开始销毁,preserveDom表示是否需要保留wdiget的依附节点(比如我们把widget**替换**到一个文档的一个已经存在的*div*上,在删除的时候是否保留并还原这个节点).
 destroyDescendants：

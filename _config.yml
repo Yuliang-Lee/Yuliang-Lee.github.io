@@ -15,6 +15,9 @@ rdiscount:
 kramdown:
   input: GFM
 
+pygments:
+  style: "monokai"
+
 defaults:
   -
     scope:
