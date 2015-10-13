@@ -187,7 +187,7 @@ test(["dereplication", "distinct", "distinct2"]);
 </table>
 
 **当重复数很少时。用对象做判断的写法有压倒性的性能优势。**
----------
+
 但是当complex设为100，也就是数组中大部分都是重复元素时：
 
 <table class="table">

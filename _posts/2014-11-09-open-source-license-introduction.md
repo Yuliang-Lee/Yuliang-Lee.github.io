@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 【转】几种常见开源协议的介绍
-categories: [license]
-tag: [license,open source]
+categories: [licenses]
+tag: [licenses,open source]
 description: 几种常见开源协议的介绍
 keywords: license,open source
 shortinfo: 开源协议：BSD开源协议、Apache Licence 2.0、GPL、LGPL、MIT、MPL
@@ -10,7 +10,9 @@ shortinfo: 开源协议：BSD开源协议、Apache Licence 2.0、GPL、LGPL、MI
 
 主要是从网上各种搜索出来的结果中摘录出来，方便自己查看。
 
-### BSD
+<span id="toc1"></span>
+
+### BSD ###
 
 BSD开源协议是一个给于使用者很大自由的协议。基本上使用者可以”为所欲为”,可以自由的使用，修改源代码，也可以将修改后的代码作为开源或者专有软件再发布。
 

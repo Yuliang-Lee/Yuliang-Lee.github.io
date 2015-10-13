@@ -42,6 +42,10 @@ a {
   text-decoration: underline;
 }
 
+.pager li > a {
+  text-decoration: none;
+}
+
 .sidebar {
 	position: fixed;
 	top: 0px;
@@ -214,7 +218,7 @@ footer {
 .badge { background: #F2756A; }
 
 #nav-menu{
-    position: fixed;
+    position: absolute;
     top: 45px;
     right: 45px;
     z-index: 2000;
@@ -243,4 +247,62 @@ ul.dropdown-menu>li>a>i.fa {
 .sidebar .tags a:hover {
     color: white;
     text-decoration: underline;
+}
+/* toc css */
+.toc {
+  height: 100%;
+  background: transparent;
+  width: 150px;
+  padding-top: 20px;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .toc {
+    display: none;
+  }
+}
+
+.toc ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.toc li {
+    padding: 0 10px;
+}
+
+.toc a {
+  color: #ccc;
+  display: block;
+  font-size: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.toc .toc-h1 {
+    padding-left: 1px;
+}
+.toc .toc-h2 {
+    padding-left: 10px;
+}
+
+.toc .toc-h3 {
+    padding-left: 30px;
+}
+
+.toc .toc-h4 {
+    padding-left: 50px;
+}
+.toc .toc-h5 {
+    padding-left: 50px;
+}
+
+.toc .toc-active a {
+    /*background: #336699;
+    box-shadow: inset -5px 0px 10px -5px #000;*/
+    color: #336699;
 }
