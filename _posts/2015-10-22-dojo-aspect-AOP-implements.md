@@ -19,7 +19,7 @@ shortinfo: 如果学过JAVA的spring框架，对于两个词语肯定不会陌�
 但是这个灵活又强大的技术在js中很容易被忽略掉。本文主要介绍Dojo的aspect模块如何实现AOP，aspect模块除去注释大概只有100行代码，可见其实现是相当简洁的。
 aspect模块主要有三个方法`before`、`after`和`around`，先看看效果：
 
-<a class="jsbin-embed" href="http://jsbin.com/lozazi/embed?js,console">dojo aspect应用 on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.2"></script>
+<a class="jsbin-embed" href="http://jsbin.com/lozazi/5/embed?js,console">JS Bin on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.2"></script>
 
 before(target,methodName,advice)：在原方法被调用前先执行advice方法
 after(target,methodName,advice,receiveArguments)：在原方法被调用后调用advice方法
