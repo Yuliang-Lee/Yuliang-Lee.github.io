@@ -158,6 +158,7 @@ article img { max-width: 100%; }
 
 h1,h2,h3,h4,h5,h6 {
     font-family:'Helvetica Neue', 'Microsoft Yahei', 'Hiragino Sans GB', 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif;
+    margin-top: 50px;
 }
 article.home h1,
 article.home h2,
