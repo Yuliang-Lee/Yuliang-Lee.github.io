@@ -10,6 +10,11 @@ keywords: javascript,web,前端,个人blog
 
 <article class="home">
 
+  
+
+  <h2>
+    <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+  </h2>
   <small>
     {% assign d = post.date | date: "%d" | plus:'0' %}
     {{ post.date | date: "%B" }}
@@ -21,10 +26,6 @@ keywords: javascript,web,前端,个人blog
     {% endcase %}
     {{ post.date | date: "%Y" }}
   </small>
-
-  <h2>
-    <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-  </h2>
 
   <div>
     {% if post.fullview %}

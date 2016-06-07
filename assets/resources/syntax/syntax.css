@@ -1,6 +1,10 @@
 div.highlight > pre {
     background-color: #272822;
 }
+figure.highlight > pre {
+  /* 兼容github */
+    background-color: #272822;
+}
 .hll { background-color: #49483e }
 .c { color: #75715e } /* Comment */
 .err { color: #960050; background-color: #1e0010 } /* Error */
@@ -64,3 +68,4 @@ div.highlight > pre {
 .vg { color: #f8f8f2 } /* Name.Variable.Global */
 .vi { color: #f8f8f2 } /* Name.Variable.Instance */
 .il { color: #ae81ff } /* Literal.Number.Integer.Long */
+.lineno { color: #ffffff; } /* line numbers */

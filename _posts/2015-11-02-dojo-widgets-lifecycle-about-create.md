@@ -35,7 +35,7 @@ Dojo widget的生命周期包括创建阶段和销毁阶段，其中创建阶段
 
 当widget被使用``new myWidget()``这样的形式创建时，首先就会调用到constructor方法，由于js的值的传递特殊性，通常在Dojo中我们会在constructor中初始化对象类型的变量，比如现在定义的widget有一个数组类型的``myArr``和对象类型的``myObj``两个属性，如果像下面这样写：
 
-{% highlight js %}
+{% highlight js linenos %}
 var myWidget = declare([ _WidgetBase, _TemplateMixin ], {
 
     myArr: [],
@@ -57,7 +57,7 @@ alert(my1.myObj === my2.myObj)   // true
 
 由此可见，每个实例化出来的对象对属性的引用，都是指向了同一个数组，一般情况下这并不是我们期望的，所以要改成：
 
-{% highlight js %}
+{% highlight js linenos %}
 var myWidget = declare([ _WidgetBase, _TemplateMixin ], {
 
     myArr: null,
@@ -86,7 +86,7 @@ alert(my1.myObj === my2.myObj)   // false
 
 在使用``declare``方法来定义模块的时候，会自动包装constructor方法然后执行一些额外的操作，最后调用postscript方法。``_WidgetBase``的postscript方法内部什么都没做，直接调用了create方法，看一下源码：
 
-{% highlight js %}
+{% highlight js linenos %}
 postscript: function(/*Object?*/params, /*DomNode|String*/srcNodeRef){
     // summary:
     //      Kicks off widget instantiation.  See create() for details.
@@ -104,7 +104,7 @@ postscript: function(/*Object?*/params, /*DomNode|String*/srcNodeRef){
 
 create方法的核心是在不同的**时机**分别调用``postMixInProperties``、``buildRendering``和``postCreate``，这三个方法能被重写。
 
-{% highlight js %}
+{% highlight js linenos %}
 create: function(params, srcNodeRef){
 
     ...做一些其他事情
@@ -167,7 +167,7 @@ create: function(params, srcNodeRef){
 
 #### postMixInProperties
 
-{% highlight js %}
+{% highlight js linenos %}
 postMixInProperties: function(){
     // summary:
     //      Called after the parameters to the widget have been read-in,
@@ -181,7 +181,7 @@ postMixInProperties: function(){
 
 由注释可知，在参数被写入实例之后，模板被实例化成DOM树之前被调用。通常是被用来设置模板需要引用到的变量————因为模板中是可以通过``${attribute}``这种写法引用widget中的属性的。比如现在有一个模板：
 
-{% highlight js %}
+{% highlight js linenos %}
 <div>
     <span>${name}</span>
 </div>
@@ -195,7 +195,7 @@ postMixInProperties: function(){
 
 在执行buildRendering之前还会做一些事情，就是生成widget的ID（如果用户没有指定）、保存对Document和<body>标签的引用和把widget添加进registry列表。buildRendering方法主要看_TemplateMixin里的，用途是把模板String渲染成真正的DOM节点。
 
-{% highlight js %}
+{% highlight js linenos %}
 buildRendering: function(){
 
     if(!this._rendered){
@@ -238,7 +238,7 @@ buildRendering: function(){
 
 _fillContent这个方法需要特别说明一下，当我们自定义的widget被用声明式使用的时候，有可能会有子节点存在，如：
 
-{% highlight js %}
+{% highlight js linenos %}
 
 <div data-dojo-type="dijit/myCustomerWidget">
     <a>click me</a>
