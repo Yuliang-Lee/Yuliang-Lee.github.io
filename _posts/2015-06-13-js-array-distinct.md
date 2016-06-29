@@ -16,7 +16,7 @@ js简单数组去重实现的几种方案。
 ------
 我的实现是：
 
-{% highlight javascript %}
+```js
 Array.prototype.dereplication = function () {
     var
         resultArr = [];
@@ -34,11 +34,11 @@ Array.prototype.dereplication = function () {
     }
     return resultArr;
 }
-{% endhighlight %}
+```
 
 参考实现是：
 
-{% highlight javascript %}
+```js
 @author 小小
 Array.prototype.distinct = function() {
     var ret = [];
@@ -54,11 +54,11 @@ Array.prototype.distinct = function() {
      }
      return ret;
 }
-{% endhighlight %}
+```
 
 我的代码和推荐的代码非常的相似，可以说思路都是一样的，但是在讨论中看到了许多人提出了**单循环实现**的代码，其中一个觉得挺巧妙的实现是：
 
-{% highlight javascript %}
+```js
 @author 盖斯贝雷
 Array.prototype.distinct = function () {
     var arr = [];
@@ -71,13 +71,14 @@ Array.prototype.distinct = function () {
     }
     return arr;
 }
-{% endhighlight %}
+```
+
 利用Object的key唯一的特点，来判断数组后续元素有是否已经存在重复。
 
 下面是测试：浏览器使用chrome 44
 测试代码：
 
-{% highlight javascript %}
+```js
 //方法循环10000次，数组长度是1000
 Array.prototype.dereplication = function() {
     var resultArr = [];
@@ -155,7 +156,7 @@ function test(funArr) {
     };
 }
 test(["dereplication", "distinct", "distinct2"]);
-{% endhighlight %}
+```
 
 当代码的complex为1000，也就是数组中大多数元素都不重复的情况下运行三次：
 

@@ -26,7 +26,7 @@ after(target,methodName,advice,receiveArguments)：在原方法被调用后调�
 around(target,methodName,advice)：把原方法作为参数传进advice函数中，advice函数会return一个函数，在return的函数中我们可以随时调用原方法。
 *源码版本是Dojo1.10.0*
 
-{% highlight js %}
+```js
 define([], function(){
     "use strict";
     var undefined, nextId = 0;
@@ -47,11 +47,11 @@ define([], function(){
         after: after
     };
 });
-{% endhighlight %}
+```
 
 aspect模块返回的就是这三个方法，而这三个方法都是调用了内部一个aspect(type)函数，而aspect函数会根据不同的type参数返回不同的函数。下面再看一下aspect函数的实现：
 
-{% highlight js %}
+```js
 function aspect(type){
     // receiveArguments这个参数只有在after方法会用到，是一个Boolean值，true表示advice方法会只使用原方法的形参作为参数，false表示使用上一个after/原方法的返回值 加上 原方法形参作为参数（这是默认行为）。
     return function(target, methodName, advice, receiveArguments){
@@ -101,11 +101,11 @@ function aspect(type){
         return results;
     };
 }
-{% endhighlight %}
+```
 
 原有的目标方法在经过aspect的方法包装后会被替换成内部的dispatcher函数，dispatcher函数会根据dispatcher的三个静态属性`dispatcher.after`、`dispatcher.before`和`dispatcher.around`依次调用advice方法，这三个属性定义在advise函数中：
 
-{% highlight js %}
+```js
 function advise(dispatcher, type, advice, receiveArguments){
     var previous = dispatcher[type];
     var around = type == "around";
@@ -176,7 +176,7 @@ function advise(dispatcher, type, advice, receiveArguments){
     }
     return signal;
 }
-{% endhighlight %}
+```
 
 被aspect包装过的目标方法调用过程大概如下图：
 ![经过aspect包装的方法调用的内部过程]({{ site.BASE_PATH }}/images/postImg/2015-10-22/aspect-procedure.png)

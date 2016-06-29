@@ -11,11 +11,11 @@ shortinfo: liferay二次开发系统，部署在tomcat时不会出现下载文�
 ### 问题
 在liferray上开发portlet，下载文件时候使用portlet的ResourceRequest做请求代理访问后台，在下载文件名字时使用URL类来打开连接，获取InpurtStream，比如连接为：`http:/xxx.com/xxx/xxx/中文文件名.txt`。如果项目部署在tomcat中的时候，使用代码
 
-{% highlight java %}
+```java
 String url = "http://xxx.com/xxx/xxx/中文文件名.txt";
 URL urls = new URL(url);
 InputStream input = urls.openStream();
-{% endhighlight %}
+```
 
 后台能接收到请求并且返回流文件，然后下载成功。
 **当把项目部署在weblogic11g的时候，后台接收到的url文件名部分会出现乱码情况，导致无法正确返回文件，执行到`urls.openStream()`的时候报错。**
@@ -26,7 +26,7 @@ InputStream input = urls.openStream();
 
 把中文名部分编码成[URL编码][1]格式(也叫[百分号编码][1])：
 
-{% highlight java %}
+```java
 String url = "http://xxx.com/xxx/xxx/中文文件名.txt";
 int index = url.lastIndexOf("/");
 String path = url.substring(0, index + 1);
@@ -34,7 +34,7 @@ String fileName = url.substring(index + 1);
 String encodeName = URLEncoder.encode(fileName, "UTF-8");
 URL urls = new URL(path  + encodeName);
 InputStream input = urls.openStream();
-{% endhighlight %}
+```
 
 这样编码之后后端就能接收到中文文件的下载请求，然后正确返回数据了。
 
