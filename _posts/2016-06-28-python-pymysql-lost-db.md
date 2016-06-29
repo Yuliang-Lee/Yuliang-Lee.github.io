@@ -10,7 +10,7 @@ shortinfo: 关于python的pymysql包初始化无法选中数据库的问题
 
 最近在部署系统的时候出现了怪异的问题：使用 pymysql 0.7.4 初始化时无法选中 database，需要在连接上数据库之后手动执行一次 “use xxx_db"。
 
-这个问题在本地环境和测试环境上都没有出现，只有在生产环境上出现了，探索许久都找不到原因，所以使用临时方法（就是手动执行一次“use xxx_db"）保证生产环境能正常使用。
+这个问题只在特定的机器中出现了，比如现在机器A没有问题，但是在机器B部署会有这个问题。探索许久都找不到原因，所以使用临时方法（就是手动执行一次“use xxx_db"）保证生产环境能正常使用。
 
 记录一下问题目前的进展。
 
@@ -134,8 +134,8 @@ def _request_authentication(self):
 
 |      | self.db | self.server_capabilities  | CLIENT.CONNECT_WITH_DB  |
 |------|---|---|---|
-| 生产 |  vip |  41733      | 3254779903  |
-| 测试 |  vip  |  8 | 8  |
+| 问题机器B |  db_A |  41733      | 3254779903  |
+| 正常机器A |  db_A  |  8 | 8  |
 
 self.db and self.server_capabilities & CLIENT.CONNECT_WITH_DB 执行之后在生产环境上是 0 （False），  而在本地环境是 8 （False）
 
