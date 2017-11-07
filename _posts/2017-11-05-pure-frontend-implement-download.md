@@ -65,7 +65,7 @@ var objectURL = URL.createObjectURL(blob);
 |--|--|--|--|--|
 | 23 | 4.0 | 10	| 15 | 7 |
 
-1.3 FileReader
+## 1.3 FileReader
 
 如果浏览器不支持下载 `BlobURLs`,则可以尝试使用`FileReader`把 `Blob`或者`File`对象转化成`DataURLs`。
 
@@ -97,7 +97,7 @@ window.open(urls, '_blank'); // 新开窗口下载
 
 兼容性：
 
-- safari 不支持`BlogURLs`触发下载，所以一定要转成`DataURLs`
+- safari 不支持`BlogURLs`触发下载，所以一定要转成`DataURLs`
 
 
 ## 2.3 msSaveOrOpenBlob（IE10+)

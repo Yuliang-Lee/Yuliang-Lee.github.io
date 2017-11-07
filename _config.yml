@@ -1,12 +1,11 @@
 # visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
 encoding: "utf-8"
+title: "xlaoyu's blog"
 paginate: 10 # pagination based on number of posts
 paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
 highlighter: rouge
 markdown: kramdown
-disqus: dbyll
-duoshuo: xlaoyu
 # google_analytics: dbyll
 
 rdiscount:
@@ -26,7 +25,7 @@ defaults:
 
 description: Stylish Jekyll Theme
 author:
-  name: xlaoYu
+  name: xlaoyu
   email: frank_yll@163.com
   github: Yuliang-Lee
   #twitter: null
