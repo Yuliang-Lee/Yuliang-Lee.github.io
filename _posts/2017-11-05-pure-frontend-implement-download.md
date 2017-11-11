@@ -131,4 +131,9 @@ if ( frame ) {
 }
 ```
 
+参考连接
+1. [FileSaver.js](https://github.com/eligrey/FileSaver.js/)
+2. [bootstrap-table 的 export 插件](https://github.com/wenzhixin/bootstrap-table/tree/master/src/extensions/export)
+3. [MDN](https://developer.mozilla.org/en-US/)
+
 **本文首发于 [xlaoyu](www.xlaoyu.info) ，不经允许不许转发**
