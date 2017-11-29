@@ -25,40 +25,40 @@ description: css书写规范，css书写技巧，css书写顺序
 
 ## **CSS书写规范**
 
-* **使用CSS缩写属性**
+1. **使用CSS缩写属性**
     CSS有些属性是可以缩写的，比如padding,margin,font等等，这样精简代码同时又能提高用户的阅读体验。
     ![pic2]({{ size.BASE_PATH }}/images/postImg/2015-09-08/pic2.png)
 
-* **去掉小数点前的“0”**
+2. **去掉小数点前的“0”**
     一个是不需要写，因为css能正确解析 “.5” 就是 “0.5”。另一个就是能减少书写的字数。
     ![pic3]({{ size.BASE_PATH }}/images/postImg/2015-09-08/pic3.png)
 
-* **简写命名**
+3. **简写命名**
     简写但是不能失去本来的意义，使用“div1”、“div2”、“a2”这样的命名，这么做可以同时减少html和css的文件大小。
     ![pic4]({{ size.BASE_PATH }}/images/postImg/2015-09-08/pic4.png)
 
-* **16进制颜色代码缩写**
+4. **16进制颜色代码缩写**
     有些颜色代码是可以缩写的，我们就尽量缩写吧，提高用户体验为主。
     ![pic5]({{ size.BASE_PATH }}/images/postImg/2015-09-08/pic5.png)
 
-* **连字符CSS选择器命名规范**
-    1. 长名称或词组可以使用中横线来为选择器命名。
-    2. 不建议使用“_”下划线来命名CSS选择器，为什么呢？
-    • 输入的时候少按一个shift键；
-    • 浏览器兼容问题 （比如使用_tips的选择器命名，在IE6是无效的）
-    • 能良好区分JavaScript变量命名（JS变量命名是用“_”）
+5. **连字符CSS选择器命名规范**
+  1. 长名称或词组可以使用中横线来为选择器命名。
+  2. 不建议使用“_”下划线来命名CSS选择器，为什么呢？  
+    • 输入的时候少按一个shift键；  
+    • 浏览器兼容问题 （比如使用_tips的选择器命名，在IE6是无效的）  
+    • 能良好区分JavaScript变量命名（JS变量命名是用“_”）  
+  ![pic6]({{ size.BASE_PATH }}/images/postImg/2015-09-08/pic6.png)
 
-    ![pic6]({{ size.BASE_PATH }}/images/postImg/2015-09-08/pic6.png)
-
-* **不要随意使用Id**
-    id在JS是唯一的，不能多次使用，而使用class类选择器却可以重复使用，另外id的优先级优先与class，所以id应该按需使用，而不能滥用。
+6. **不要随意使用Id**
+    id在JS是唯一的，不能多次使用，而使用class类选择器却可以重复使用，另外id的优先级优先与class，所以id应该按需使用，而不能滥用。  
     ![pic7]({{ size.BASE_PATH }}/images/postImg/2015-09-08/pic7.png)
 
-* **为选择器添加状态前缀**
-    有时候可以给选择器添加一个表示状态的前缀，让语义更明了，比如下图是添加了“.is-”前缀。
+7. **为选择器添加状态前缀**
+    有时候可以给选择器添加一个表示状态的前缀，让语义更明了，比如下图是添加了“.is-”前缀。  
     ![pic8]({{ size.BASE_PATH }}/images/postImg/2015-09-08/pic8.png)
 
-
+-------
+  
 ## **附录**：
 
 1. [https://en.bem.info/method/definitions/#bem-entity](https://en.bem.info/method/definitions/#bem-entity) css命名方法论BEM
