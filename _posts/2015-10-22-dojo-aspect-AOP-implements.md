@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Dojo面向切面编程之aspect源码分析
+author: xlaoyu
 categories: [dojo]
 tag: [javascript,dojo,aspect,AOP]
 description: Dojo中aspect模块的源码原理介绍
@@ -8,11 +9,16 @@ keywords: javascript,dojo,aspect,AOP
 shortinfo: 如果学过JAVA的spring框架，对于两个词语肯定不会陌生：面向切面（AOP）和控制反转（IOC）。面向切面编程，是可以通过预编译方式和运行期动态代理实现在不修改源代码的情况下给程序动态统一添加功能的一种技术。
 ---
 
+* content
+{:toc}
+
 ### AOP的概念
 
 如果学过JAVA的spring框架，对于两个词语肯定不会陌生：面向切面（AOP）和控制反转（IOC）。
 
 > 面向切面编程，是可以通过预编译方式和运行期动态代理实现在不修改源代码的情况下给程序动态统一添加功能的一种技术。这里“统一添加的功能”主要是指给一系列函数统一添加某段功能代码，让所有调用这个函数的地方在执行这个函数是都会在开始，或者结束时执行那段功能代码；当然，这种类似嵌入的代码是不会写在函数内部的，即函数的实现是不会有任何改变的。[^1]。
+
+
 
 ### Dojo aspect
 

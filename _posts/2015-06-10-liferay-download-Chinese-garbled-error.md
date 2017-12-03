@@ -1,12 +1,20 @@
 ---
 layout: post
 title: liferay二次开发部署在weblogic上的文件下载中文名问题解决
-categories: [liferay]
+author: xlaoyu
+categories: [portal]
 tag: [liferay,中文乱码]
 description: liferay二次开发部署在weblogic上的文件下载中文名问题
 keywords: liferay,download,Chinese garbled
 shortinfo: liferay二次开发系统，部署在tomcat时不会出现下载文件中文乱码问题，但是部署在weblogic会出现乱码问题。
 ---
+
+* content
+{:toc}
+
+liferay二次开发系统，部署在tomcat时不会出现下载文件中文乱码问题，但是部署在weblogic会出现乱码问题。
+
+
 
 ### 问题
 在liferray上开发portlet，下载文件时候使用portlet的ResourceRequest做请求代理访问后台，在下载文件名字时使用URL类来打开连接，获取InpurtStream，比如连接为：`http:/xxx.com/xxx/xxx/中文文件名.txt`。如果项目部署在tomcat中的时候，使用代码

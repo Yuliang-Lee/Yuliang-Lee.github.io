@@ -1,12 +1,20 @@
 ---
 layout: post
 title: HTML meta标签和Open Graph protocol
+author: xlaoyu
 categories: [html]
 tag: [html, SEO, meta标签]
 description: HTML的meta标签简单介绍,包括Open Graph protocol(开放内容协议)的简单介绍
 keywords: html,meta,Open Graph protocol,开放内容协议
 shortinfo: HTML的meta标签简单介绍,包括Open Graph protocol(开放内容协议)的简单介绍
 ---
+
+* content
+{:toc}
+
+HTML的meta标签简单介绍,包括Open Graph protocol(开放内容协议)的简单介绍
+
+
 
 ## meta标签的定义
 

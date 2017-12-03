@@ -1,6 +1,7 @@
 ---
 layout: post
 title: express使用multer处理上传报错Boundary not found
+author: xlaoyu
 categories: [nodejs]
 tag: [javascript,nodejs,upload,express]
 description: nodejs服务端处理上传请求报错Boundarynotfound
@@ -8,8 +9,13 @@ keywords: nodejs,javascript,upload,express
 shortinfo: nodejs服务端处理上传请求报错Boundary not found
 ---
 
+* content
+{:toc}
+
 在用nodejs + expressjs + multer做服务端上传处理的时候，控制台一直报错
 ![错误]({{ site.BASE_PATH }}/images/postImg/2016-01-14/1.png)
+
+
 
 谷歌之后发现`Boundary`这个东西大概用途是在上传体中用来分割每个值的一个分隔符，如：
 ![Boundary用途]({{ site.BASE_PATH }}/images/postImg/2016-01-14/2.png)

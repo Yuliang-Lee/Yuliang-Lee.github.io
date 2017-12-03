@@ -1,0 +1,24 @@
+
+
+{% if site.gitment_comment %}
+<!-- gitment 评论框 -->
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+
+<!-- gitment initial -->
+<script type="text/javascript">
+const gitment = new Gitment({
+  id: '{{ page.url }}', // optional
+  owner: 'Yuliang-Lee',
+  repo: 'Yuliang-Lee.github.io',
+  oauth: {
+    client_id: '8eca35051716517356e6',
+    client_secret: '96494fcb4815d71fba95a1b1dc2fc81763641d2f',
+  },
+  // ...
+  // For more available options, check out the documentation below
+})
+
+gitment.render('comment_block')
+</script>
+<!-- initial end -->
+{% endif %}

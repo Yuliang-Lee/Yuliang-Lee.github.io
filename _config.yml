@@ -1,42 +1,56 @@
-# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
-encoding: "utf-8"
-title: "xlaoyu's blog"
-paginate: 10 # pagination based on number of posts
-paginate_path: "page:num"
-exclude: ["README.md"] # files to exclude
-highlighter: rouge
-markdown: kramdown
-# google_analytics: dbyll
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-rdiscount:
-  extensions: [autolink]
+# Site settings
+title: xLaoyu
+brief-intro: Front-end Dev Engineer
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://xlaoyu.info" # the base hostname & protocol for your site
+
+permalink: /:year/:month/:day/:title/
+
+# other links
+twitter_username:
+facebook_username:
+github_username:  Yuliang-Lee
+email: frank_yll@163.com
+weibo_username:
+zhihu_username: frankIsBest
+linkedIn_username:
+dribbble_username:
+
+description_footer: 编程，生活，人生。
+
+# statistic analysis 统计代码
+# 百度统计 id，将统计代码替换为自己的百度统计id，即
+# hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
+# xxxxx字符串
+baidu_tongji_id: 99e44034d751a046013d2029e099d1a2
+google_analytics_id: UA-66911989-1 # google 分析追踪id
+
+gitment_comment: true
+
+# Build settings
+markdown: kramdown
 
 kramdown:
   input: GFM
+  syntax_highlighter: rouge
 
-defaults:
-  -
-    scope:
-      path: "" # empty string for all files
-    values:
-      title: xlaoYu's bloggggggggg
-      comments: true
-      keywords: javascript,web,前端,个人blog
+# port
+# port: 1234
 
-description: Stylish Jekyll Theme
-author:
-  name: xlaoyu
-  email: frank_yll@163.com
-  github: Yuliang-Lee
-  #twitter: null
-  #pinterest: asd123
-  #linkedin: asd123
-  #rss: false
-  bio: 未识乾坤大，但怜草木青
-  email_md5: 726351295ec82e145928582f595aa3aa
+# url
+category_dir: category/
+tag_dir: tag/
 
-rss_path: feed.xml
-categories_path: categories.html
-tags_path: tags.html
+# excerpt
+excerpt_separator: "\n\n\n\n"
 
-BASE_PATH:
+# paginate
+plugins: [jekyll-paginate]
+paginate: 10

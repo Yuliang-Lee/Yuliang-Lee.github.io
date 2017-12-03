@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 【译】使用dojo的lang.hitch方法有什么好处
+author: Jason Cheatham
 categories: [dojo]
 tag: [javascript,dojo]
 description: 函数上下文环境 这个概念经常会让很多刚接触javascript的开发者感到疑惑，尤其当其和this联系在一起说的时候。例如：Java 中的方法是在编译时绑定到类，其中的this在调用方法的时候总是会指向包含此方法的类的实例。
@@ -8,9 +9,14 @@ keywords: dojo,lang.hitch,js this,js context
 shortinfo: 函数上下文环境 这个概念经常会让很多刚接触javascript的开发者感到疑惑，尤其当其和this联系在一起说的时候。例如：Java 中的方法是在编译时绑定到类，其中的this在调用方法的时候总是会指向包含此方法的类的实例。
 ---
 
+* content
+{:toc}
+
 原文地址: [What is the benefit to using run-time binding with lang.hitch?](https://www.sitepen.com/blog/2013/09/25/dojo-faq-what-is-the-benefit-to-using-run-time-binding-with-lang-hitch/?utm_source=tuicool)
 
 函数上下文环境 这个概念经常会让很多刚接触javascript的开发者感到疑惑，尤其当其和this联系在一起说的时候。例如：Java中的方法是在编译时绑定到类，其中的this在调用方法的时候总是会指向包含此方法的类的实例。另一方面，JavaScript函数的上下文环境不是由函数在哪里定义而决定的，而是由它的调用方式决定的。
+
+
 
 Javascript函数被调用的方式一般有两种，作为一个对象的方法被调用和单独调用。当一个方法作为一个方法被函数调用，像 foo.bar()，this 会指向调用这个方法的对象（例如：foo）。当一个函数单独调用，像 bar()， this  会指向全局作用域。
 

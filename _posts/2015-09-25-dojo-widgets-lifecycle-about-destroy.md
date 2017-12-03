@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Dojo widgets的生命周期-删除阶段
+author: xlaoyu
 categories: [dojo]
 tag: [javascript,dojo,dojo widget]
 description: Dojo widgets的生命周期删除阶段的介绍,结合源码作简单的说明
@@ -8,8 +9,13 @@ keywords: dojo,dojo widget,widget lifecycle,dijit
 shortinfo: Dojo widgets的生命周期删除阶段的介绍,结合源码作简单的说明
 ---
 
+* content
+{:toc}
+
 在前端飞速发展的今天，现在才来写关于Dojo的东西感觉很怪异，因为很多人都没用过甚至没听过这样一个JS库了，但是怎么说在公司用了1年多，也有一定的了解，把这些认识记录一下吧。结合源码作简单的说明，希望能帮到以后进DOJO这个坑的人。
 *Ps：基于Dojo1.9.3版本,展现的源码都去掉大部分的原生注释*
+
+
 
 > [Dojo Toolkit](http://dojotoolkit.org/)是一个非常强大的,基于[AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md)规范的js工具库,它包括提供基础功能的dojo包,提供UI组件的dijit包和第三方的dojox包.
 

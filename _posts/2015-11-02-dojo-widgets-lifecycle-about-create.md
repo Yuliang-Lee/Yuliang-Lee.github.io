@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Dojo widgets的生命周期-创建
+author: xlaoyu
 categories: [dojo]
 tag: [javascript,dojo,dojo widget]
 description: Dojo widgets的生命周期创建阶段的介绍,结合源码作简单的说明
@@ -8,7 +9,11 @@ keywords: dojo,dojo widget,widget lifecycle,dijit
 shortinfo: Dojo widgets的生命周期创建阶段的介绍,结合源码作简单的说明
 ---
 
+* content
+{:toc}
+
 删除篇：[Dojo widgets的生命周期-删除阶段](http://www.xlaoyu.info/dojo/2015/09/25/dojo-widgets-lifecycle-about-destroy.html)
+
 
 
 # 简介

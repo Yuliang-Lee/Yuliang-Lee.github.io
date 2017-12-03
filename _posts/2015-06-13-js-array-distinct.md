@@ -1,11 +1,17 @@
 ---
 layout: post
 title: js数组去重实现
+author: xlaoyu
 categories: [javascript]
 tags: [javascript, Array, 数组去重]
 ---
 
+* content
+{:toc}
+
 js简单数组去重实现的几种方案。
+
+
 
 在[牛客网][1]做了一套*“腾讯2015春招web前端开发练习卷”*，其中一道题目是用JS实现Array数组去重，原题描述如下：
 

@@ -1,14 +1,20 @@
 ---
 layout: post
 title: Hello World!
+author: xlaoyu
 categories: [life]
 tags: [life]
 comments: true
 ---
 
+* content
+{:toc}
+
 Hello github pages~~~~
 把原来在csdn的blog搬到这里来了~~
 大概说一下用github-pages搭建个人blog的这个过程
+
+
 
 大多数都是参考的http://www.pchou.info/category.html#web-build里面的文章
 其中遇到的事情：

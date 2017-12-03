@@ -1,23 +1,26 @@
----
-theme :
-  name : dbyll
----
-{% include default.html %}
+<!DOCTYPE html>
+<html lang="zh-CN">
 
-{% if site.google_analytics %}
-<!-- Asynchronous Google Analytics snippet -->
-<script>
-  var _gaq = _gaq || [];
-  var pluginUrl =
- '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-  _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
-  _gaq.push(['_trackPageview']);
+  {% include head.html %}
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-{% endif %}
+  <body>
+
+    {% include header.html %}
+
+        {{ content }}
+
+    {% include footer.html %}
+    {% include backToTop.html %}
+    <script src="{{ " /js/main.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+    <script src="{{ " /js/smooth-scroll.min.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src="{{ " /js/scroll.min.js " | prepend: site.baseurl }}" charset="utf-8"></script> -->
+  </body>
+
+</html>

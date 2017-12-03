@@ -1,14 +1,20 @@
 ---
 layout: post
 title: 【转】几种常见开源协议的介绍
-categories: [licenses]
+author: 佚名
+categories: [tech]
 tag: [licenses,open source]
 description: 几种常见开源协议的介绍
 keywords: license,open source
 shortinfo: 开源协议：BSD开源协议、Apache Licence 2.0、GPL、LGPL、MIT、MPL
 ---
 
+* content
+{:toc}
+
 主要是从网上各种搜索出来的结果中摘录出来，方便自己查看。
+
+
 
 <span id="toc1"></span>
 

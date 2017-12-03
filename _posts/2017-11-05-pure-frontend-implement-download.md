@@ -1,13 +1,19 @@
 ---
 layout: post
 title: 纯前端实现文件下载功能
+author: xlaoyu
 categories: [javascript]
 tag: [javascript]
 description: 纯前端实现文件下载功能
 keywords: javascript,下载,download
 ---
 
+* content
+{:toc}
+
 一般情况下，想要实现文件下载/导出功能，需要在前端把数据发到服务端或者发送下载请求到服务端，然后由服务端通过`获取数据 -> 生成数据 -> 生成文件`三个步骤生成数据，在响应请求头中包含`Content-disposition: attachment`用于指定文件类型、文件名和文件编码等，浏览器接收到响应后就会触发下载行为。
+
+
 
 但是有时候这种交互是一种多余的资源和带宽消耗，比如需要下载的是用户生成的内容（在线作图等）或者内容已经全部返回到客户端了。如果这时候能不经过服务端而直接生成下载任务，能节省不少的资源和时间开销。下面就说说实现的几种方法。
 

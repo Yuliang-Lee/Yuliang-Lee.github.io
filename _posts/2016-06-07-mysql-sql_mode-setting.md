@@ -1,14 +1,20 @@
 ---
 layout: post
 title: mysql的sql_mode设置简介
-categories: [mysql]
-tag: [mysql]
+author: xlaoyu
+categories: [database]
+tag: [mysql,sql_mode]
 description: mysql的sql_mode设置简介
 keywords: mysql,sql_mode
 shortinfo: mysql的sql_mode设置简介
 ---
 
+* content
+{:toc}
+
 最近接手了一个项目，在项目正常跑起来之后，进行日常的操作，发现好多地方都报了mysql的数据库查询错误，然后发现线上的版本又好好的能正常运行，最后google发现是因为mysql服务器的版本不一致导致的。但是版本不一样并不是因为语法改变了不兼容，而是因为mysql5.7.4之后的sql_mode默认配置发生了变化，一个没接触过的东西进入了眼球，遂继续探索之。
+
+
 
 ### 描述
 
