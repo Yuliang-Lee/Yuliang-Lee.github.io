@@ -30,4 +30,6 @@ shortinfo: nodejs服务端处理上传请求报错Boundary not found
 参考链接
 [SIMPLE FILE UPLOADS USING JQUERY & AJAX](http://abandon.ie/notebook/simple-file-uploads-using-jquery-ajax)
 
-版权声明：本文为博主原创文章，未经博主允许不得转载，本文首发于[xlaoyu](www.xlaoyu.info)
+-------
+
+版权声明：本文为博主原创文章，未经博主允许不得转载，本文首发于[xlaoyu](https://www.xlaoyu.info)

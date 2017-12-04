@@ -218,3 +218,7 @@ files: [
 [QUnit](http://qunitjs.com/)
 [Karma](http://karma-runner.github.io/0.13/index.html)
 [Karma和一些测试的知识介绍](http://www.douban.com/note/334051223/) 由于里面写的原文链接我访问不了，所以贴上此链接了。
+
+--------
+
+版权声明：本文为博主原创文章，未经博主允许不得转载，本文首发于[xlaoyu](https://www.xlaoyu.info)

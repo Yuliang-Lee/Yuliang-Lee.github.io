@@ -72,3 +72,7 @@ description: css书写规范，css书写技巧，css书写顺序
 3. [http://css.doyoe.com/](http://css.doyoe.com/)css参考手册，里面有包括所有css的介绍和兼容性列表和示例代码（css界的圣经，Amen）
 4. [http://www.zhihu.com/question/20549293](http://www.zhihu.com/question/20549293) 查看浏览器内置样式的方法
 5. [http://segmentfault.com/a/1190000002629708](http://segmentfault.com/a/1190000002629708)关于浏览器渲染的reflow和repaint（提高性能需要了解的一个深入话题，其中关于content tree和render tree的详细概念自行百度）
+
+----------
+
+版权声明：本文为博主原创文章，未经博主允许不得转载，本文首发于[xlaoyu](https://www.xlaoyu.info)

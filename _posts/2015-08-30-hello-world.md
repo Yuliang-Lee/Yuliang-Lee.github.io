@@ -46,3 +46,7 @@ Hello github pages~~~~
 4. 等几分钟然后你就可以拿着你的域名去装X了！
 
 <a class="btn btn-default" href="https://github.com/Yuliang-Lee">my github address</a>
+
+----------
+
+版权声明：本文为博主原创文章，未经博主允许不得转载，本文首发于[xlaoyu](https://www.xlaoyu.info)

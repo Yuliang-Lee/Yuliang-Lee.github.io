@@ -142,4 +142,6 @@ if ( frame ) {
 2. [bootstrap-table 的 export 插件](https://github.com/wenzhixin/bootstrap-table/tree/master/src/extensions/export)
 3. [MDN](https://developer.mozilla.org/en-US/)
 
-**本文首发于 [xlaoyu](www.xlaoyu.info) ，不经允许不许转发**
+-------------
+
+版权声明：本文为博主原创文章，未经博主允许不得转载，本文首发于[xlaoyu](https://www.xlaoyu.info)

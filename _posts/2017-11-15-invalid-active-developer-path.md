@@ -31,4 +31,6 @@ xcode-select --install
 [https://stackoverflow.com/questions/32893412/command-line-tools-not-working-os-x-el-capitan-macos-sierra-macos-high-sierra/32894314#32894314](https://stackoverflow.com/questions/32893412/command-line-tools-not-working-os-x-el-capitan-macos-sierra-macos-high-sierra/32894314#32894314)
 [https://apple.stackexchange.com/questions/254380/macos-sierra-invalid-active-developer-path](https://apple.stackexchange.com/questions/254380/macos-sierra-invalid-active-developer-path)
 
-**本文首发于 [xlaoyu](www.xlaoyu.info) ，不经允许不许转发**
+---------
+
+版权声明：本文为博主原创文章，未经博主允许不得转载，本文首发于[xlaoyu](https://www.xlaoyu.info)

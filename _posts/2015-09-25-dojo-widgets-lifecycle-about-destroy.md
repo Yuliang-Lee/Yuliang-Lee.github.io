@@ -144,3 +144,7 @@ destroy: function() {
 3. dijit中和layout相关的一些widget（contentPane、BorderContainer、TabContainer等）都有更加复杂的创建和销毁机制，这里不展开详说，可以私下找我一起研究研究。
 4. 真实场景中的RIA/SPA都非常的错综复杂纵横交错眼花缭乱，记得在销毁的时候要销毁干净（尤其对节点/widget的引用要销毁掉）才能杜绝内存泄露，导致网页越来越卡的问题。
 5. 想到再补充
+
+----------
+
+版权声明：本文为博主原创文章，未经博主允许不得转载，本文首发于[xlaoyu](https://www.xlaoyu.info)

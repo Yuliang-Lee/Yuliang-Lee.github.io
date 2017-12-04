@@ -116,3 +116,7 @@ Meta Property=og代码的功能并不等同于网页的meta name标签，两者�
 4. [http://ogp.me/](http://ogp.me/) Open Graph Protocol官网
 5. [http://segmentfault.com/a/1190000002407912](http://segmentfault.com/a/1190000002407912) 常用meta整理
 6. [http://fex.baidu.com/blog/2014/10/html-head-tags/?qq-pf-to=pcqq.c2c](http://fex.baidu.com/blog/2014/10/html-head-tags/?qq-pf-to=pcqq.c2c) HTML head 头标签
+
+----------
+
+版权声明：本文为博主原创文章，未经博主允许不得转载，本文首发于[xlaoyu](https://www.xlaoyu.info)

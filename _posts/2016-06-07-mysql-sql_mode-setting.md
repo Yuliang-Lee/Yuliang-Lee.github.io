@@ -96,4 +96,6 @@ SET SESSION sql_mode = 'modes';
 [^2]: [https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_no_zero_date](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_no_zero_date)
 [^3]: [https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sql-mode-strict](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sql-mode-strict)
 
-版权声明：本文为博主原创文章，未经博主允许不得转载，本文首发于[xlaoyu](www.xlaoyu.info)
+--------
+
+版权声明：本文为博主原创文章，未经博主允许不得转载，本文首发于[xlaoyu](https://www.xlaoyu.info)

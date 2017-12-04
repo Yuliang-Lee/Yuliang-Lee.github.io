@@ -194,7 +194,10 @@ function advise(dispatcher, type, advice, receiveArguments){
 3. AOP主要可以用在给公共组件添加业务系统自身需要额外执行的一些方法功能，而不改变源程序的情况下使用，比如：一个公司有一个request组件，负责包装所有用ajax和后端交互的细节，只需要传设定好的参数，公司所有系统都会使用这个组件，但是某个CRM系统需要收集所有ajax请求的时候系统的运行情况，这时候如果去改基础组件肯定不行，通过AOP来实现这样的功能是最合适的。
 
 如有不足或错漏的地方，请联系本人^_^
-版权所有，转载请注明！
 
 
 [^1]: [http://www.ibm.com/developerworks/cn/web/1203_zhouxiang_dojoaop/](http://www.ibm.com/developerworks/cn/web/1203_zhouxiang_dojoaop/)
+
+--------
+
+版权声明：本文为博主原创文章，未经博主允许不得转载，本文首发于[xlaoyu](https://www.xlaoyu.info)
