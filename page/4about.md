@@ -28,19 +28,17 @@ type: page
 
 首先感谢 HyG，本主题基于[HyG](https://gaohaoyang.github.io/about/)主题修改而来。
 
-**若您想使用这个 jekyll 博客主题，请访问：[https://github.com/Yuliang-Lee/Yuliang-Lee.github.io](https://github.com/Yuliang-Lee/Yuliang-Lee.github.io)**
-
-~欢迎使用~
+**若您想使用这个 jekyll 博客主题，请访问：[releases](https://github.com/Yuliang-Lee/Yuliang-Lee.github.io/releases)**地址下载最新的源码包
 
 欢迎大家提一些对本站主题的建议，可以新建一个 [Issue](https://github.com/Yuliang-Lee/Yuliang-Lee.github.io/issues)。
 
 ## Template Update Log
 
-*v1.0.0 / 2017-12-03*
+*v2.0.0 / 2017-12-03*
 
 - 修改了 `h1~h6` 标签的 `margin` 属性，根据 *`ant-design`* 的规范设置间隔关系
 - 评论插件改为使用[gitment](https://github.com/imsun/gitment)
-- blog主题改版，在原来主题的基础上进行修改，**感谢[HyG](https://gaohaoyang.github.io/)**
+- blog主题改版，在[HyG的模板](https://gaohaoyang.github.io/)主题基础上进行修改
 
 ## 友情链接
 
