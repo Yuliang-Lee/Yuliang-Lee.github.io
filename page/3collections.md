@@ -17,7 +17,9 @@ type: page
 
 # 在线工具(online tools)
 
+- [在线图片去底工具](http://www.aigei.com/bgremover)
 - [正则表达式匹配](https://regex101.com/)
+- [色彩对比度校验](http://leaverou.github.io/contrast-ratio/)
 
 # 干货 blog
 
