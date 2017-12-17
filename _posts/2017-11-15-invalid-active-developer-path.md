@@ -33,4 +33,4 @@ xcode-select --install
 
 ---------
 
-版权声明：本文为博主原创文章，未经博主允许不得转载，本文首发于[xlaoyu](https://www.xlaoyu.info)
+版权声明：原创文章，如需转载，请注明出处“本文首发于[xlaoyu.info](https://www.xlaoyu.info)”

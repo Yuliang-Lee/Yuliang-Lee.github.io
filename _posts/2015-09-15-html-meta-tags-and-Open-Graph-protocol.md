@@ -119,4 +119,4 @@ Meta Property=og代码的功能并不等同于网页的meta name标签，两者�
 
 ----------
 
-版权声明：本文为博主原创文章，未经博主允许不得转载，本文首发于[xlaoyu](https://www.xlaoyu.info)
+版权声明：原创文章，如需转载，请注明出处“本文首发于[xlaoyu.info](https://www.xlaoyu.info)”
