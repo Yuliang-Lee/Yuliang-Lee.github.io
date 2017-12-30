@@ -1,0 +1,9 @@
+.page {
+  .left {
+    h1 {
+      &:first-child {
+        margin-top: 8px;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "demo_link": "https://codepen.io/haoyang/pen/jrvrQq",
+    "img_link": "https://ooo.0o0.ooo/2016/11/24/5836d81f48cd2.png",
+    "code_link": "https://codepen.io/haoyang/pen/jrvrQq",
+    "title": "Fisher-Yates 洗牌算法动画",
+    "core_tech": "JavaScript",
+    "description": "Fisher-Yates 洗牌算法动画。算法详情见 <a href =\"https://gaohaoyang.github.io/2016/10/16/shuffle-algorithm/\">这里</a>。"
+  },
+  {
+    "demo_link": "https://codepen.io/Yuliang-Lee/pen/xpqXjX",
+    "img_link": "https://i.loli.net/2017/12/28/5a44f3c06fe98.png",
+    "code_link": "https://codepen.io/Yuliang-Lee/pen/xpqXjX",
+    "title": "js动画 - 文字渐显",
+    "core_tech": "JavaScript & CSS",
+    "description": "使用 css 生成引号，使用 js 动画 API 做文字渐显效果"
+  },
+  {
+    "demo_link": "https://codepen.io/Yuliang-Lee/pen/wpJrVB",
+    "img_link": "https://i.loli.net/2017/12/28/5a44f3c061e56.png",
+    "code_link": "https://codepen.io/Yuliang-Lee/pen/wpJrVB",
+    "title": "csss实现按钮分裂动效",
+    "core_tech": "CSS",
+    "description": "使用 CSS 实现鼠标经过按钮分裂为4个按钮"
+  }
+]
