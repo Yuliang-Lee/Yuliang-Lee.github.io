@@ -16,6 +16,14 @@
     success: function(demoContent){
       contentInit(demoContent) //内容初始化
       waitImgsLoad() //等待图片加载，并执行布局初始化
+
+      /**
+       * target _blank
+       */
+      var aTags = $('.page[demo] a')
+      for (var i = 0; i < aTags.length; i++) {
+          aTags[i].setAttribute('target', '_blank')
+      }
     }
   });
 }());

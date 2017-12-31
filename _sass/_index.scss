@@ -1,11 +1,7 @@
+@import "./_variables.scss";
+
 .page[index] {
-    a {
-        color: #4d6dad;
-        transition: 0.5s ease;
-        &:hover {
-            color: #223253;
-        }
-    }
+
     .left {
         >ul {
             padding: 0;
@@ -80,7 +76,7 @@
     .right {
         .wrap {
             .side {
-                margin-bottom: 20px;
+                margin-bottom: $md;
                 padding-bottom: 0;
                 i {
                     margin-right: 3px;
@@ -105,7 +101,7 @@
                                 }
                             }
                             .name {
-                                padding-left: 15px;
+                                padding-left: $md;
                             }
                             .badge {
                                 display: block;
@@ -113,7 +109,7 @@
                                 // width: 20px;
                                 float: right;
                                 text-align: center;
-                                margin-right: 15px;
+                                margin-right: $md;
                                 margin-top: 3px;
                                 padding: 0 10px;
                                 font-size: 12px;

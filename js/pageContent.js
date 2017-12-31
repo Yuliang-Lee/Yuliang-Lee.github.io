@@ -85,7 +85,7 @@ function isMaxHeight() {
         }
 
         //监听body，点击body，隐藏Content
-        document.querySelector('body').addEventListener('click', function() {
+        $('body').on('click, touchstart', function() {
             rightDiv.classList.remove('right-show')
             anchorBtn.classList.remove('anchor-hide')
         })

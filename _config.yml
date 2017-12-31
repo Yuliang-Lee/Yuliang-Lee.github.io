@@ -31,7 +31,7 @@ description_footer: 编程，生活，人生。
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
 # xxxxx字符串
 baidu_tongji_id: 99e44034d751a046013d2029e099d1a2
-google_analytics_id: UA-66911989-1 # google 分析追踪id
+# google_analytics_id: UA-66911989-1 # google 分析追踪id
 
 gitment_comment: true
 

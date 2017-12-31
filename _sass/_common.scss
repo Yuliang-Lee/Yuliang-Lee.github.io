@@ -1,8 +1,25 @@
+@import './_animation.scss';
+
 .page {
   .left {
+    animation-name: slideLeft;
+    animation-duration: 0.5s;
+
     h1 {
       &:first-child {
         margin-top: 8px;
+      }
+    }
+  }
+
+  .right {
+    > .wrap {
+      @for $i from 1 through 5 {
+        .side:nth-child(#{$i}) {
+          animation-name: slideBottom;
+          animation-duration: 0.5s;
+          animation-delay: #{(($i - 1) / 5)}s;
+        }
       }
     }
   }

@@ -21,7 +21,10 @@
         menuBtn.classList.add('active')
       }
     }
-    document.querySelector('body').addEventListener('click', function() {
+    $('body').on('click, touchstart', function(evt) {
+      if (evt.target.id === 'headerMenu') {
+        return;
+      }
       nav.classList.remove('nav-show')
       menuBtn.classList.remove('active')
     })
@@ -68,5 +71,17 @@
 
   function updateProgress(perc) {
       $prog2.css({width: perc * 100 + '%'});
+  }
+}());
+
+/**
+ * target _blank
+ */
+(function() {
+  var aTags = $('a')
+  for (var i = 0; i < aTags.length; i++) {
+    if (aTags[i].getAttribute('href').indexOf('http') > -1) {
+      aTags[i].setAttribute('target', '_blank')
+    }
   }
 }());

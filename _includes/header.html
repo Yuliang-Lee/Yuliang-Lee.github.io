@@ -20,10 +20,10 @@
                     <li>
                         {% if my_page.url == page.url %}
                         <a class="active" href="{{ my_page.url | prepend: site.baseurl }}">
-                            {% else %}
+                        {% else %}
                         <a href="{{ my_page.url | prepend: site.baseurl }}">
                         {% endif %}
-                            <i class="fa fa-{{my_page.icon}}"></i>{{ my_page.title }}
+                        <i class="fa fa-{{my_page.icon}}"></i>{{ my_page.title }}
                         </a>
                     </li>
                     {% endif %}
