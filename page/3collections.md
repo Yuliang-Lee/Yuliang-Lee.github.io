@@ -32,6 +32,16 @@ type: page
 - [司徒正美](http://www.cnblogs.com/rubylouvre/) avalon.js 作者，前端黑魔法师名副其实。
 - [阮一峰](http://www.ruanyifeng.com/blog/archives.html) 技术大杂烩，有些文章讲解的技术会有争议，但是对于入门来说确实是好东西。
 
+# UED团队博客
+
+- [百度FEX](http://fex.baidu.com/)
+- [阿里巴巴中文站](http://www.aliued.cn/)
+- [腾讯CDC](http://cdc.tencent.com/)
+- [腾讯AlloyTeam](http://www.alloyteam.com/)
+- [腾讯ISUX](https://isux.tencent.com/)
+- [腾讯TGideas](http://tgideas.qq.com/)
+- [360奇舞团](https://75team.com/)
+
 # 炫酷动效
 
 - [codepen collection](https://codepen.io/collection/XOWBzB/) 在 codepen 上收集的炫酷效果实现
