@@ -4,6 +4,7 @@ title: Collections
 permalink: /collection/
 icon: bookmark
 type: page
+description: 个人收藏
 ---
 
 * content

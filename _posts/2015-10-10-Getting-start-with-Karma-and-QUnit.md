@@ -2,7 +2,7 @@
 layout: post
 title: 用Karma和QUnit做前端自动单元测试
 author: xlaoyu
-categories: [testing]
+categories: [test]
 tag: [javascript,test,Karma,QUnit]
 description: 用Karma结合QUnit配置前端自动化单元测试环境
 keywords: javascript,test,Karma,QUnit
