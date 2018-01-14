@@ -383,6 +383,8 @@ describe('HelloWorld.vue', () => {
 
 # 结语
 
+上面所有代码都放在了[这个项目](https://github.com/Yuliang-Lee/karma-mocha-power-assert-webpack-babel-test-boilerplate)，可以把项目下载下来手动执行查看结果。
+
 以上大概讲解了现代前端测试的方法和过程，但是有人会问，我们为什么需要搞那么多事情，写那么多代码甚至测试代码比真实代码还要多呢？这里引用 Egg 官方一段话回答这个问题：
 
 ```
