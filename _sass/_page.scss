@@ -133,6 +133,10 @@
             margin: $sm 0;
             padding: 0 $sm 0 $xl;
 
+            ul {
+              padding: 0 0 0 $md;
+            }
+
             li+li {
               margin-top: .25rem;
             }
