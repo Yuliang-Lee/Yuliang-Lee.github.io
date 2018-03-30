@@ -21,7 +21,7 @@ excerpt: 这篇文章我们来看看为什么在 WebAssembly 中操作内存是�
 
 -----------------
 
-这是此系列内容的第二篇文章：
+这是 WebAssembly 使用系列介绍的第二篇文章：
 
 1. [使用JavaScript创建WebAssembly模块实例](../2018-03-25-Creating-a-WebAssembly-module-instance-with-JavaScript.md)
 2. 安全的WebAssembly内存操作
