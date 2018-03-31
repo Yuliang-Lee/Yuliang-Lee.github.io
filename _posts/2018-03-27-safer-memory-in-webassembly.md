@@ -15,7 +15,7 @@ excerpt: 这篇文章我们来看看为什么在 WebAssembly 中操作内存是�
 
 > 作者：Lin Clark  
   译者：xlaoyu  
-  英文原文：[Creating a WebAssembly module instance with JavaScript](https://hacks.mozilla.org/2017/07/creating-a-webassembly-module-instance-with-javascript/)
+  英文原文：[Memory in WebAssembly (and why it’s safer than you think)](https://hacks.mozilla.org/2017/07/memory-in-webassembly-and-why-its-safer-than-you-think/)
 
 转载请注明出处，保留原文链接以及作者信息
 
@@ -25,10 +25,10 @@ excerpt: 这篇文章我们来看看为什么在 WebAssembly 中操作内存是�
 
 1. [使用JavaScript创建WebAssembly模块实例](../2018-03-25-Creating-a-WebAssembly-module-instance-with-JavaScript.md)
 2. 安全的WebAssembly内存操作
-3. WebAssembly 的 table 对象是什么
+3. [WebAssembly的导入类型 table 到底是什么？](../2018-03-31-webassembly-table-imports.md)
 
 
-Memory（内存，内存都以**内存**称呼）在 WebAssembly 中的使用和在 JavaScript 中稍有不同。在 WebAssembly 里，我们可以直接访问原始字节，这可能会让一些人感到担忧，但它实际上比你想象的更安全。
+[Memory](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory)（内存，内存都以**内存**称呼）在 WebAssembly 中的使用和在 JavaScript 中稍有不同。在 WebAssembly 里，我们可以直接访问原始字节，这可能会让一些人感到担忧，但它实际上比你想象的更安全。
 
 
 ## 什么是内存对象？
