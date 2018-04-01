@@ -25,8 +25,8 @@ excerpt: 上一篇文章介绍了 WebAssembly 的基本概念，现在我们来�
 这是 WebAssembly 使用系列介绍的第一篇文章：
 
 1. 使用JavaScript创建WebAssembly模块实例
-2. [安全的WebAssembly内存操作](../2018-03-27-safer-memory-in-webassembly.md)
-3. [WebAssembly的导入类型 table 到底是什么？](../2018-03-31-webassembly-table-imports.md)
+2. [安全的WebAssembly内存操作]({% link _posts/2018-03-27-safer-memory-in-webassembly.md %})
+3. [WebAssembly的导入类型 table 到底是什么？]({% link _posts/2018-03-31-webassembly-table-imports.md %})
 
 
 WebAssembly 是一种[在浏览器中运行代码的新方法](https://hacks.mozilla.org/2017/02/a-cartoon-intro-to-webassembly/)。通过这项新技术，我们可以使用 C 或 C++ 等语言编写模块然后运行在浏览器中运行它们。
@@ -122,4 +122,4 @@ memory 对象使 WebAssembly 代码可以模拟手动内存管理。由于这个
 ![run](https://i.loli.net/2018/03/25/5ab7a91892402.png)
 
 
-[下篇文章](../2018-03-27-safer-memory-in-webassembly.md)主要解释 `Memory` 到底是什么东西以及怎么使用。
+[下篇文章]({% link _posts/2018-03-27-safer-memory-in-webassembly.md %})主要解释 `Memory` 到底是什么东西以及怎么使用。

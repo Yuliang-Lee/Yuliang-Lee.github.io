@@ -23,11 +23,11 @@ excerpt: 来认识 JavaScript 编程中从未听说过的 table 类型。
 
 这是 WebAssembly 使用系列介绍的第二篇文章：
 
-1. [使用JavaScript创建WebAssembly模块实例](../2018-03-25-Creating-a-WebAssembly-module-instance-with-JavaScript.md)
-2. [安全的WebAssembly内存操作](../2018-03-27-safer-memory-in-webassembly.md)
+1. [使用JavaScript创建WebAssembly模块实例]({% link _posts/2018-03-25-Creating-a-WebAssembly-module-instance-with-JavaScript.md %})
+2. [安全的WebAssembly内存操作]({% link _posts/2018-03-27-safer-memory-in-webassembly.md %})
 3. WebAssembly 的 table 对象是什么
 
-在[第一篇文章](../2018-03-25-Creating-a-WebAssembly-module-instance-with-JavaScript.md)中已经介绍过可以导入 WebAssembly 模块实例中四种不同类型的值了：
+在[第一篇文章]({% link _posts/2018-03-25-Creating-a-WebAssembly-module-instance-with-JavaScript.md %})中已经介绍过可以导入 WebAssembly 模块实例中四种不同类型的值了：
 
 - values
 - function imports

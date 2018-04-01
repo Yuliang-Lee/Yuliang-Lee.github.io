@@ -23,9 +23,9 @@ excerpt: 这篇文章我们来看看为什么在 WebAssembly 中操作内存是�
 
 这是 WebAssembly 使用系列介绍的第二篇文章：
 
-1. [使用JavaScript创建WebAssembly模块实例](../2018-03-25-Creating-a-WebAssembly-module-instance-with-JavaScript.md)
+1. [使用JavaScript创建WebAssembly模块实例]({% link _posts/2018-03-25-Creating-a-WebAssembly-module-instance-with-JavaScript.md %})
 2. 安全的WebAssembly内存操作
-3. [WebAssembly的导入类型 table 到底是什么？](../2018-03-31-webassembly-table-imports.md)
+3. [WebAssembly的导入类型 table 到底是什么？]({% link _posts/2018-03-31-webassembly-table-imports.md %})
 
 
 [Memory](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Memory)（内存，内存都以**内存**称呼）在 WebAssembly 中的使用和在 JavaScript 中稍有不同。在 WebAssembly 里，我们可以直接访问原始字节，这可能会让一些人感到担忧，但它实际上比你想象的更安全。
@@ -107,4 +107,4 @@ WebAssembly 可以直接获取该数组内部的字节，但它不能看到超�
 
 ---------
 
-下篇文章，我们一起来看看什么是 WebAssembly 的 `table` 对象。
+[下篇文章]({% link _posts/2018-03-31-webassembly-table-imports.md %})，我们一起来看看什么是 WebAssembly 的 `table` 对象。
