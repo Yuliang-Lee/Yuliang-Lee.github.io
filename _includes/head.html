@@ -23,13 +23,17 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ "/images/apple-touch-icon-152×152.png" | prepend: site.baseurl }}">
     <!-- For iPhone 6 Plus with @3× display: -->
     <link rel="apple-touch-icon-precomposed" sizes="180x180" href="{{ "/images/apple-touch-icon-180×180.png" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_8v3czwksspqlg14i.css">
     <link rel="stylesheet" href="{{ "/css/main.css " | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <!-- github corner style -->
+    <style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml " | prepend: site.baseurl | prepend: site.url }}">
     {% if site.gitment_comment %}
-        <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+        <link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
     {% endif %}
 {% if site.baidu_tongji_id %}
     <script>
