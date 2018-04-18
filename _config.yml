@@ -58,3 +58,4 @@ paginate: 10
 
 # make Jekyll's HTTP server bind to all available IPs, rather than just to localhost
 host: 0.0.0.0
+exclude: ["package.json","package-lock.json","node_modules"]
