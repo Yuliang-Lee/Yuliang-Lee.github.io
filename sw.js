@@ -2,7 +2,7 @@
 const APP_PREFIX = 'xlaoyu_blog_';
 
 // Version of the off-line cache (change this value everytime you want to update cache)
-const VERSION = 'version_1.0.1';
+const VERSION = 'version_1.0.4';
 
 const CACHE_NAME = APP_PREFIX + VERSION;
 const URLS = [                // Add URL you want to cache in this list.

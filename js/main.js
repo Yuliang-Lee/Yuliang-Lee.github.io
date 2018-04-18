@@ -91,5 +91,6 @@
 
 // 注册 service worker
 if (navigator.serviceWorker) {
+  // 加时间戳每次加载最新文件
   navigator.serviceWorker.register('/sw.js?t=' + Date.now(), {scope: '/'})
 }

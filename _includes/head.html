@@ -40,7 +40,8 @@
     {% if site.gitment_comment %}
         <link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
     {% endif %}
-{% if site.baidu_tongji_id %}
+
+    {% if site.baidu_tongji_id %}
     <script>
     // 百度统计代码
     var _hmt = _hmt || [];
@@ -51,7 +52,8 @@
       s.parentNode.insertBefore(hm, s);
     })();
     </script>
-{% endif %}
+    <script src="//zz.bdstatic.com/linksubmit/push.js"></script>
+    {% endif %}
 {% if site.google_analytics_id %}
     <script>
     // google analytics
