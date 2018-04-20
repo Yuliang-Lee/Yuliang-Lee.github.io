@@ -183,7 +183,7 @@ HTTP2 增加了两个特性解决上述问题：
 关于服务端推送对网页性能的影响，和对于 CDN 的使用的比较，可以参考下面两篇文章：
 
 1. [measuring-server-push-performance](https://www.smashingmagazine.com/2017/04/guide-http2-server-push/#measuring-server-push-performance)
-2. http://www.ruanyifeng.com/blog/2018/03/http2_server_push.html
+2. [http2_server_push](http://www.ruanyifeng.com/blog/2018/03/http2_server_push.html) ruanyifeng
 
 结论：使用 HTTP2 的多路复用和服务器推送功能，并不意味着可以减少甚至抛弃使用 CDN，因为 CDN 带来的现实地理位置上延迟减少是 HTTP2 所不能解决的，反而我们应该思考的是如何把 HTTP2 和 CDN 结合起来，进一步提升网络服务的效率和稳定性，减少延迟。
 
