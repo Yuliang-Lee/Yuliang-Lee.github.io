@@ -49,10 +49,7 @@ self.addEventListener('install', function (e) {
 
 // Delete outdated caches
 self.addEventListener('activate', function (e) {
-  e.waitUntil(Promise.all([
-    // 更新客户端
-    clients.claim(),
-
+  e.waitUntil(
     caches.keys().then(function (keyList) {
       // `keyList` contains all cache names under your username.github.io
       // filter out ones that has this app prefix to create white list
@@ -60,17 +57,19 @@ self.addEventListener('activate', function (e) {
       // 所以 cacheWhitelist 只包含当前脚本最新的key或者其他脚本添加的 cache
       var cacheWhitelist = keyList.filter(function (key) {
         return key.indexOf(APP_PREFIX);
-      })
+      });
       // add current cache name to white list
-      cacheWhitelist.push(CACHE_NAME)
+      cacheWhitelist.push(CACHE_NAME);
 
       return Promise.all(keyList.map(function (key, i) {
         if (cacheWhitelist.indexOf(key) === -1) {
           console.log('deleting cache : ' + keyList[i] )
           return caches.delete(keyList[i])
         }
-      }))
+      }));
+    }).then(function () {
+      // 更新客户端
+      clients.claim();
     })
-  ])
-  )
-})
+  );
+});
