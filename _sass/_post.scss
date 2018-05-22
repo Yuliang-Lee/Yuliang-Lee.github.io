@@ -19,11 +19,9 @@
         }
     }
     a {
-        // color: #4d6dad;
         transition: 0.5s ease;
         &:hover {
             color: #40A9FF;
-            // background-color: #f4efeb;
         }
     }
     .left {
@@ -33,7 +31,7 @@
             }
             li {
                 color: #333;
-                margin: 0;
+                // margin: 0;
             }
         }
         // .post-recent {

@@ -8,9 +8,15 @@
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 150 }}{% elsif page.description %}{{ page.description | escape }}{% else %}{{ site.description | escape }}{% endif %}">
     <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
 
+    <!-- APP Manifest -->
+    <link rel="manifest" href="/manifest.json">
+
     <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="icon" href="/favicon.ico?" type="image/x-icon">
     <!-- shortcut and touch icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="xlaoyu's blog">
     <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
     <link rel="apple-touch-icon-precomposed" href="{{ "/images/apple-touch-icon-57×57.png" | prepend: site.baseurl }}">
     <!-- For the iPad mini and the first- and second-generation iPad (@1× display) on iOS ≤ 6: -->
@@ -23,15 +29,19 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ "/images/apple-touch-icon-152×152.png" | prepend: site.baseurl }}">
     <!-- For iPhone 6 Plus with @3× display: -->
     <link rel="apple-touch-icon-precomposed" sizes="180x180" href="{{ "/images/apple-touch-icon-180×180.png" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_8v3czwksspqlg14i.css">
     <link rel="stylesheet" href="{{ "/css/main.css " | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <!-- github corner style -->
+
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml " | prepend: site.baseurl | prepend: site.url }}">
     {% if site.gitment_comment %}
-        <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+        <link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
     {% endif %}
-{% if site.baidu_tongji_id %}
+
+    {% if site.baidu_tongji_id %}
     <script>
     // 百度统计代码
     var _hmt = _hmt || [];
@@ -42,7 +52,8 @@
       s.parentNode.insertBefore(hm, s);
     })();
     </script>
-{% endif %}
+    <script src="//zz.bdstatic.com/linksubmit/push.js"></script>
+    {% endif %}
 {% if site.google_analytics_id %}
     <script>
     // google analytics

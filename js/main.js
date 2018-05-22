@@ -75,13 +75,22 @@
 }());
 
 /**
- * target _blank
+ * 外链地址都在新页面打开
  */
 (function() {
   var aTags = $('a')
+  var origin = location.origin;
   for (var i = 0; i < aTags.length; i++) {
-    if (aTags[i].getAttribute('href').indexOf('http') > -1) {
+    var href = aTags[i].getAttribute('href');
+    var notLocal = href.startsWith('http') && !href.startsWith(origin);
+    if (notLocal) {
       aTags[i].setAttribute('target', '_blank')
     }
   }
 }());
+
+// 注册 service worker
+if (navigator.serviceWorker) {
+  // 加时间戳每次加载最新文件
+  navigator.serviceWorker.register('/service-worker.js', {scope: '/'})
+}
