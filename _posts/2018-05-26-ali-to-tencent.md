@@ -6,6 +6,7 @@ categories: [life]
 tag: [life]
 description: 'xlaoyu的随笔'
 keywords: 随笔,xlaoyu
+published: false
 ---
 
 
@@ -61,12 +62,12 @@ keywords: 随笔,xlaoyu
 
 > 从2016年看了前六场之后突然莫名相信他能1-3逆转夺冠让我赢得了人生第一次也是唯一一次赌球，到最近越发关注这个从贫民窟里出生为了不断挑战极限，不断追求梦想而付出了一切的大汉。抢7，绝杀，翻盘，带伤战斗，以33岁年龄领衔最长出场时长，最高平均得分，7次40+（季后赛其他所有人加起来8次），打破一切质疑，带领这支骑士走到了现在。老汉用来释放压力的方式是看书《牧羊少年的奇幻之旅》，苏群多次提起，詹姆斯的人生正是小说里说的那句话: 没有一颗心，会因为追求梦想而受伤！
 不得不让人想起蝙蝠侠3里猫女和蝙蝠侠的对话:
-猫女：come with me. Save yourself.  
-  猫女：you don't owe these people anymore  
-  猫女：you have given them everything  
-  猫女：you have given them everything  
-蝙蝠侠：not everything,not yet.   
-灭霸为了实现自己的理想失去了所有，詹姆斯也付出了一切！  
+猫女：come with me. Save yourself.
+  猫女：you don't owe these people anymore
+  猫女：you have given them everything
+  猫女：you have given them everything
+蝙蝠侠：not everything,not yet.
+灭霸为了实现自己的理想失去了所有，詹姆斯也付出了一切！
 倾骑所有！
 
 ![wechatimg23](https://user-images.githubusercontent.com/6936358/40587277-8c499bf2-61ff-11e8-9a37-22fe0ed0cf71.jpeg)
