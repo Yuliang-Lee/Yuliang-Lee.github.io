@@ -24,6 +24,7 @@ description: 个人收藏
 - [easings 动效预览以及 css 代码](http://easings.net/zh-cn) 配合 [Tween](https://github.com/zhangxinxu/Tween/blob/master/tween.js)可以快速做出简单的动效
 - [各种各样的在线工具](https://tool.lu/) 灰常棒
 - [https://webassembly.studio/](https://webassembly.studio/) 在线 WebAssembly demo网站
+- [神一般的 unicode 编码查询](https://unicode-table.com/cn/) 太牛逼，太强大，太好用
 
 # 系列文章
 
