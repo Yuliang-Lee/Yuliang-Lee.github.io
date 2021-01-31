@@ -35,6 +35,10 @@ description: 个人信息
 
 ## Template Update Log
 
+*v2.4.0 / 2021-01-31*
+
+- 评论插件从 gitment 改为使用 [utteranc](https://utteranc.es/)
+
 *v2.3.0 / 2018-04-18*
 
 - 支持离线访问

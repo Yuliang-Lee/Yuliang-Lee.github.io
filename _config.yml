@@ -33,7 +33,7 @@ dribbble_username:
 baidu_tongji_id: 99e44034d751a046013d2029e099d1a2
 # google_analytics_id: UA-66911989-1 # google 分析追踪id
 
-gitment_comment: true
+beaudar_comment: true
 
 # Build settings
 markdown: kramdown
