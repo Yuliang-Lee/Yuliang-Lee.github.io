@@ -42,11 +42,11 @@ Hello github pages~~~~
 
 2. 修改ANAME记录里 @ 的那条记录，points to 修改为192.30.252.153或192.30.252.154（如果你是主要访客是亚洲的，也可以是103.245.222.133），保存√。
 
-3. 在你的项目根目录下创建CNAME文件（重说三），里面写入你购买的域名，如：www.xlaoyu.info，保存然后merge到你项目中。
+3. 在你的项目根目录下创建CNAME文件（重说三），里面写入你购买的域名，如：www.xlaoyu.me，保存然后merge到你项目中。
 4. 等几分钟然后你就可以拿着你的域名去装X了！
 
 <a class="btn btn-default" href="https://github.com/Yuliang-Lee">my github address</a>
 
 ----------
 
-版权声明：原创文章，如需转载，请注明出处“本文首发于[xlaoyu.info](https://www.xlaoyu.info)”
+版权声明：原创文章，如需转载，请注明出处“本文首发于[xlaoyu.me](https://www.xlaoyu.me)”

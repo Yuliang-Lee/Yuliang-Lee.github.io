@@ -12,7 +12,7 @@ shortinfo: Dojo widgets的生命周期创建阶段的介绍,结合源码作简�
 * content
 {:toc}
 
-删除篇：[Dojo widgets的生命周期-删除阶段](http://www.xlaoyu.info/dojo/2015/09/25/dojo-widgets-lifecycle-about-destroy.html)
+删除篇：[Dojo widgets的生命周期-删除阶段](http://www.xlaoyu.me/dojo/2015/09/25/dojo-widgets-lifecycle-about-destroy.html)
 
 
 
@@ -291,4 +291,4 @@ startup方法会在widget的domNode加入文档树之后执行，在postCreate�
 
 -------
 
-版权声明：原创文章，如需转载，请注明出处“本文首发于[xlaoyu.info](https://www.xlaoyu.info)”
+版权声明：原创文章，如需转载，请注明出处“本文首发于[xlaoyu.me](https://www.xlaoyu.me)”
