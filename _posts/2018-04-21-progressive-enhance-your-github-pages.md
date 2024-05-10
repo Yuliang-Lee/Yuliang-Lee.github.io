@@ -218,7 +218,7 @@ module.exports = {
 
 **实际效果：**
 
-在联网状态下访问 [www.xlaoyu.me](https://www.xlaoyu.me)，然后把网络断开，在页面进行操作（非外链转跳）,可以看到在断网时交互并不受影响。
+在联网状态下访问 [www.xlaoyu.info](https://www.xlaoyu.info)，然后把网络断开，在页面进行操作（非外链转跳）,可以看到在断网时交互并不受影响。
 
 
 ## App Manifest
@@ -296,4 +296,4 @@ icons 怎么配置可以看 [这里](https://developer.chrome.com/apps/manifest/
 
 --------------------
 
-版权声明：原创文章，如需转载，请注明出处“本文首发于[xlaoyu.me](https://www.xlaoyu.me)”
+版权声明：原创文章，如需转载，请注明出处“本文首发于[xlaoyu.info](https://www.xlaoyu.info)”

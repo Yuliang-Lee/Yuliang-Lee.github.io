@@ -12,7 +12,7 @@ description: xlaoyu的前端技术空间
 keywords: 前端，编程，技术
 description_footer: 编程，生活，人生。
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://xlaoyu.me" # the base hostname & protocol for your site
+url: "http://xlaoyu.info" # the base hostname & protocol for your site
 
 permalink: /:year/:month/:day/:title/
 

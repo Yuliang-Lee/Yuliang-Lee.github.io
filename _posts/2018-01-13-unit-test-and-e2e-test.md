@@ -411,4 +411,4 @@ Web 应用中的单元测试更加重要，在 Web 产品快速迭代的时期�
 
 -------
 
-版权声明：原创文章，如需转载，请注明出处“本文首发于[xlaoyu.me](https://www.xlaoyu.me)”
+版权声明：原创文章，如需转载，请注明出处“本文首发于[xlaoyu.info](https://www.xlaoyu.info)”
